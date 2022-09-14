@@ -17,9 +17,9 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Linha da matriz");
+
         int n = sc.nextInt();
-        System.out.print("coluna da matriz");
+
         int m = sc.nextInt();
 
         int[][] mat = new int[n][m];
@@ -43,7 +43,7 @@ public class Program {
                     if(j-1 >= 0) {
                         System.out.println("Left : "+mat[i][j-1]);
                     }
-                    //Left
+                    //Right
                     if(j+1  < m) {
                         System.out.println("Right : "+mat[i][j+1]);
                     }
