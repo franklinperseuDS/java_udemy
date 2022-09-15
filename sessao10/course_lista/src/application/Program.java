@@ -23,6 +23,9 @@ public class Program {
             System.out.println(x);
         }
 
+        System.out.println("------------------------print usando stream ---------------");
+        list.stream().forEach(System.out::println);
+        System.out.println("------------------------FIM do print usando stream ---------------");
         System.out.println();
         System.out.println("Remover Anna");
         list.remove("Anna");
