@@ -10,7 +10,8 @@ public class Post {
     private String content;
     private Integer likes;
 
-    private List<Comment> comment = new ArrayList<>();
+    private List<Comment> comments = new ArrayList<>();
+    public Post(){}
 
     public Post(Date moment, String title, String content, Integer likes) {
         this.moment = moment;
@@ -52,8 +53,24 @@ public class Post {
     }
 
     public List<Comment> getComment() {
-        return comment;
+        return comments;
     }
 
+    public void addComent(Comment comment){
+        comments.add(comment);
+    }
 
+    public void removeComent(Comment comment){
+        comments.remove(comment);
+    }
+
+    @Override
+    public String toString() {
+        return title+"\n"+likes+" Likes -"+moment+
+               
+                ", content='" + content + '\'' +
+                ", likes=" + likes +
+                ", comments=" + comments +
+                '}';
+    }
 }
