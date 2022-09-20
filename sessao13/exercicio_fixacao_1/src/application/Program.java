@@ -31,7 +31,7 @@ public class Program {
         System.out.print("How many items to this order? ");
         int n = sc.nextInt();
 
-        Order order = new Order(date,OrderStatus.valueOf(orderStatus),new Client(name,email,date));
+        Order order = new Order( new Date(),OrderStatus.valueOf(orderStatus),new Client(name,email,date));
 
         for (int i = 1 ; i <= n; i++) {
             sc.nextLine();
