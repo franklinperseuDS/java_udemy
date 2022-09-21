@@ -46,6 +46,10 @@ public class Program {
         double sum = 0.0;
         for ( TaxPayer tp : list) {
             System.out.println(tp.getName()+": $ "+String.format("%.2f",tp.tax()));
+
+        }
+        for ( TaxPayer tp : list) {
+
             sum += tp.tax();
         }
         System.out.println();
