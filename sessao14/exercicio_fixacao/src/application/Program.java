@@ -42,8 +42,6 @@ public class Program {
                 Product pr = new Product(name,price);
                 list.add(pr);
             }
-
-
         }
 
         System.out.println();
